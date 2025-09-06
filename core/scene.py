@@ -14,6 +14,7 @@ class Scene:
     def destroy(self):
         for obj in self.objects:
             self.objects[obj].destroy()
+        self.objects.clear()
             
     def change_scene(self, scene_name):
         self.destroy()
